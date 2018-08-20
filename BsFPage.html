@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Calculadora de Reconversión</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="BsFPage.html">Calc. Reconversión</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="BsFPage.html">BsF a BsS</a></li>
+                    <li><a href="BsSPage.html">BsS a BsF</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="calculator-holder">
+            <table class="calculator" id="calc">
+                </br>
+                </br>
+                </br>
+                <div class="row">
+                    <div class="col-md-4">
+                        Bolivares Fuertes - BsF<br>
+                        <div name="calc_display" id="calc_display" class="calc_display" style="max-width: 280px;">0</div>
+                        <!--<input type="text" readonly="readonly" name="calc_display" id="calc_display" class="calc_result calc_display" />-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        Bolivares Soberanos - BsS<br>
+                        <div name="calc_result" id="calc_result" class="calc_display" style="max-width: 280px;">0</div>
+                        <!--<input type="text" readonly="readonly" name="calc_result" id="calc_result" class="calc_result calc_display" />-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="min-width: 280px;">
+                        <button id="Delete" name="Delete" class="btn btn-info btn-calc btn-double" onclick="Delete_Click()">DEL</button>
+                        <button id="Clear" name="Clear" class="btn btn-info btn-calc" onclick="Clear_Click()">C</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="min-width: 280px;">
+                        <button id="Bt7" name="Bt7" class="btn btn-info btn-calc num" data-num="7">7</button>
+                        <button id="Bt8" name="Bt8" class="btn btn-info btn-calc num" data-num="8">8</button>
+                        <button id="Bt9" name="Bt9" class="btn btn-info btn-calc num" data-num="9">9</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="min-width: 280px;">
+                        <button id="Bt4" name="Bt4" class="btn btn-info btn-calc num" data-num="4">4</button>
+                        <button id="Bt5" name="Bt5" class="btn btn-info btn-calc num" data-num="5">5</button>
+                        <button id="Bt6" name="Bt6" class="btn btn-info btn-calc num" data-num="6">6</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="min-width: 280px;">
+                        <button id="Bt1" name="Bt1" class="btn btn-info btn-calc num" data-num="1">1</button>
+                        <button id="Bt2" name="Bt2" class="btn btn-info btn-calc num" data-num="2">2</button>
+                        <button id="Bt3" name="Bt3" class="btn btn-info btn-calc num" data-num="3">3</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="min-width: 280px;">
+                        <button id="Bt0" name="Bt0" class="btn btn-info btn-calc btn-double num" data-num="0">0</button>
+                        <button id="BtDec" name="BtDec" class="btn btn-info btn-calc num" data-num=".">.</button>
+                    </div>
+                </div>
+            </table>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        </br>
+        <footer>
+            <p>Calculadora de Recorvesión Monetaria Venezuela 2018</p>
+            <p id="year">&copy; 2018 - Alfredo Castro</p>
+        </footer>
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+</html>
